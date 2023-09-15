@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 1912943532}
   - component: {fileID: 1912943531}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: 'SceneLoader '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -874,6 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2bb8f66a1d51674f8d6e1093ddf5380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartButton: {fileID: 1836075674}
 --- !u!4 &1912943532
 Transform:
   m_ObjectHideFlags: 0

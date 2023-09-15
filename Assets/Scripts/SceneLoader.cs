@@ -1,23 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    void Start()
+    [SerializeField] private Button _startButton;
+
+    private void Start()
     {
+        _startButton.onClick.AddListener(StartButtonClicked);
     }
 
-    void Update()
+    private void StartButtonClicked()
     {
+        ChangeScenes(1);
     }
 
-    public void Restart()
+    private void ChangeScenes(int numberOfTheScene)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void ChangeScenes(int numberScenes)
-    {
-        SceneManager.LoadScene(numberScenes);
+        SceneManager.LoadScene(numberOfTheScene);
     }
 }
